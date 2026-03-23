@@ -1,215 +1,226 @@
-# 📘 Primitivas - Cálculo II  
+# 📘 Primitivas - Cálculo II
 
 ---
 
-## 📚 Introdução  
+## 📚 Introdução
 
-As **primitivas**, também chamadas de **integrais indefinidas**, são o processo de encontrar uma função original a partir de sua derivada.
+As **primitivas** são funções que representam o processo inverso da derivada.
 
-Em outras palavras, se sabemos como uma função varia (sua derivada), queremos descobrir **qual função gerou essa variação**.
+Dada uma função $f(x)$, queremos encontrar uma função $F(x)$ tal que:
 
-A integral indefinida é representada por:
+$F'(x) = f(x)$
 
-\[
-\int f(x)\,dx
-\]
+Ou seja, buscamos uma função cuja derivada é a função dada.
 
-Ela nos fornece **todas as funções cuja derivada é f(x)**.
+As primitivas estão diretamente relacionadas às integrais indefinidas:
+
+$\int f(x)\,dx = F(x) + C$
 
 ---
 
-## 🔁 Relação entre Derivada e Integral  
+## 🔁 Relação entre Derivada e Primitiva
 
-A **integral é o processo inverso da derivada**.
+A ideia central é:
 
-- Derivar → encontrar a taxa de variação  
-- Integrar → reconstruir a função original  
+👉 Derivada e primitiva são operações inversas.
 
-### 💡 Ideia principal:
+- Derivar → “desmonta” a função  
+- Integrar → “reconstrói” a função  
+
+### 💡 Relação formal
 
 Se:
 
-\[
-f'(x) = g(x)
-\]
+$F'(x) = f(x)$
 
 Então:
 
-\[
-\int g(x)\,dx = f(x) + C
-\]
+$\int f(x)\,dx = F(x) + C$
 
 ---
 
 ### 📌 Exemplos
 
-- Se:
-  \[
-  \frac{d}{dx}(x^2) = 2x
-  \]
+#### Exemplo 1
 
-  Então:
-  \[
-  \int 2x\,dx = x^2 + C
-  \]
-
----
-
-- Se:
-  \[
-  \frac{d}{dx}(\sin x) = \cos x
-  \]
-
-  Então:
-  \[
-  \int \cos x\,dx = \sin x + C
-  \]
-
----
-
-👉 Ou seja: **integrar é "voltar" a função antes da derivada**.
-
----
-
-## 🧠 Definição de Primitiva  
-
-Uma função \( F(x) \) é chamada de **primitiva** de \( f(x) \) se:
-
-\[
-F'(x) = f(x)
-\]
-
-A integral indefinida é escrita como:
-
-\[
-\int f(x)\,dx = F(x) + C
-\]
-
----
-
-### 🔹 Constante de integração (+C)
-
-Sempre adicionamos uma constante \( C \) porque:
-
-- A derivada de uma constante é zero  
-- Diferentes funções podem ter a mesma derivada  
-
-Exemplo:
-
-\[
-\frac{d}{dx}(x^2 + 1) = 2x
-\]
-\[
-\frac{d}{dx}(x^2 + 5) = 2x
-\]
+$\frac{d}{dx}(x^2) = 2x$
 
 Logo:
 
-\[
-\int 2x\,dx = x^2 + C
-\]
+$\int 2x\,dx = x^2 + C$
 
 ---
 
-## 📊 Exemplos Simples  
+#### Exemplo 2
+
+$\frac{d}{dx}(\sin x) = \cos x$
+
+Logo:
+
+$\int \cos x\,dx = \sin x + C$
+
+---
+
+👉 Primitiva é simplesmente **encontrar a função original**.
+
+---
+
+## 🧠 Definição de Primitiva
+
+Uma função $F(x)$ é chamada de **primitiva** de $f(x)$ se:
+
+$F'(x) = f(x)$
+
+---
+
+### 🔹 Família de Primitivas
+
+Uma função não possui apenas uma primitiva, mas várias:
+
+$F(x) + C$
+
+Isso ocorre porque:
+
+- A derivada de qualquer constante é zero  
+- Logo, várias funções diferentes possuem a mesma derivada  
+
+Exemplo:
+
+$F(x) = x^2 + 1$  
+$F(x) = x^2 + 5$
+
+Ambas têm derivada:
+
+$2x$
+
+---
+
+## 📊 Tabela de Primitivas Básicas
+
+| Função $f(x)$ | Primitiva $F(x)$ |
+|--------------|-----------------|
+| $x^n$, $n \neq -1$ | $\frac{x^{n+1}}{n+1}$ |
+| $\frac{1}{x}$ | $\ln|x|$ |
+| $e^x$ | $e^x$ |
+| $a^x$ | $\frac{a^x}{\ln a}$ |
+| $\sin x$ | $-\cos x$ |
+| $\cos x$ | $\sin x$ |
+| $\sec^2 x$ | $\tan x$ |
+| $\frac{1}{1+x^2}$ | $\arctan x$ |
+
+---
+
+## ⚙️ Propriedades das Primitivas
+
+### 🔹 Linearidade
+
+$\int (f(x) + g(x))\,dx = \int f(x)\,dx + \int g(x)\,dx$
+
+---
+
+### 🔹 Constante multiplicativa
+
+$\int c \cdot f(x)\,dx = c \cdot \int f(x)\,dx$
+
+---
+
+### 🔹 Soma e subtração
+
+$\int (f(x) - g(x))\,dx = \int f(x)\,dx - \int g(x)\,dx$
+
+---
+
+## 🧮 Exemplos Resolvidos
+
+---
 
 ### 🔹 Exemplo 1
 
-\[
-\int x\,dx
-\]
+$\int 4x^3\,dx$
 
-Sabemos que:
-
-\[
-\frac{d}{dx}\left(\frac{x^2}{2}\right) = x
-\]
-
-Então:
-
-\[
-\int x\,dx = \frac{x^2}{2} + C
-\]
+$= x^4 + C$
 
 ✔ Verificação:
 
-\[
-\frac{d}{dx}\left(\frac{x^2}{2}\right) = x
-\]
+$\frac{d}{dx}(x^4) = 4x^3$
 
 ---
 
 ### 🔹 Exemplo 2
 
-\[
-\int x^2\,dx
-\]
+$\int (2x + 6)\,dx$
 
-Sabemos que:
-
-\[
-\frac{d}{dx}\left(\frac{x^3}{3}\right) = x^2
-\]
-
-Então:
-
-\[
-\int x^2\,dx = \frac{x^3}{3} + C
-\]
+$= x^2 + 6x + C$
 
 ✔ Verificação:
 
-\[
-\frac{d}{dx}\left(\frac{x^3}{3}\right) = x^2
-\]
+$\frac{d}{dx}(x^2 + 6x) = 2x + 6$
 
 ---
 
 ### 🔹 Exemplo 3
 
-\[
-\int \cos(x)\,dx
-\]
+$\int e^x\,dx$
 
-Sabemos que:
-
-\[
-\frac{d}{dx}(\sin x) = \cos x
-\]
-
-Então:
-
-\[
-\int \cos(x)\,dx = \sin(x) + C
-\]
+$= e^x + C$
 
 ✔ Verificação:
 
-\[
-\frac{d}{dx}(\sin x) = \cos x
-\]
+$\frac{d}{dx}(e^x) = e^x$
 
 ---
 
-## ⚠️ Observações Importantes  
+### 🔹 Exemplo 4
 
-- ✅ Sempre adicionar **+C** na integral indefinida  
-- ✅ Integração depende diretamente das **derivadas conhecidas**  
-- ✅ A integral não é única (por causa da constante)  
-- ⚠️ Esquecer o **+C** é um erro muito comum em provas  
+$\int \cos x\,dx$
+
+$= \sin x + C$
+
+✔ Verificação:
+
+$\frac{d}{dx}(\sin x) = \cos x$
 
 ---
 
-## 🏁 Conclusão  
+### 🔹 Exemplo 5
 
-A ideia central é:
+$\int (3\sin x - 2\cos x)\,dx$
 
-👉 **Integrar é desfazer uma derivada**
+$= -3\cos x - 2\sin x + C$
 
-- Derivada → reduz a função  
-- Integral → reconstrói a função  
+---
 
-Se você domina derivadas, então já tem a base para resolver integrais.
+## ⚠️ Erros Comuns
 
-👉 Pense sempre assim:  
-**"Qual função, quando derivada, gera isso aqui?"**
+- ❌ Esquecer o $+C$  
+- ❌ Confundir derivada com primitiva  
+- ❌ Erros de sinal (principalmente em trigonometria)  
+- ❌ Aplicar regra de potência incorretamente  
+- ❌ Não verificar o resultado derivando  
+
+---
+
+## 🎯 Dicas para Prova
+
+- 🔍 Sempre pense: *“qual função gera isso ao derivar?”*  
+- 📌 Use a tabela como base  
+- ⚡ Simplifique antes de integrar  
+- 🧠 Confira sempre derivando o resultado  
+- 📚 Memorize as primitivas mais importantes  
+
+---
+
+## 🏁 Conclusão
+
+As **primitivas** são fundamentais para entender integrais.
+
+👉 Ideia central:
+
+- Derivada → transforma a função  
+- Primitiva → reconstrói a função  
+
+Dominar primitivas é essencial para resolver integrais com segurança.
+
+📌 Sempre questione:
+
+👉 *“Qual função tem essa derivada?”*
