@@ -80,4 +80,9 @@ Cada pasta contém:
 ## 📬 Dúvidas e Contato 
 Se quiser trocar ideias, tirar dúvidas, dar feedbacks ou mandar sugestões: 
 - 📧 [mariafernandaomaro@gmail.com](mailto:mariafernandaomaro@gmail.com)
-- - 💼 [LinkedIn – Maria Fernanda Maro](https://www.linkedin.com/in/maria-fernanda-maro)
+- 💼 [LinkedIn – Maria Fernanda Maro](https://www.linkedin.com/in/maria-fernanda-maro)
+
+---
+
+## 📄 Licença 
+Este repositório está sob a licença MIT. Você pode usar o código para fins educacionais e pessoais, desde que mantenha os devidos créditos.
