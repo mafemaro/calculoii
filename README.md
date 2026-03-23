@@ -61,7 +61,7 @@ Cada pasta contém:
  ┃ ┣ 📂 integrais
  ┃ ┃ ┣ 📂 definidas
  ┃ ┃ ┣ 📂 indefinidas
- ┃ ┃ ┗ 📂 primitivas
+ ┃ ┗ 📂 primitivas
  ┗ 📄 README.md
 ```
 
