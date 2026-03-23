@@ -1,8 +1,6 @@
 # 📘 Cálculo II  
 
 [![Linguagem](https://img.shields.io/badge/Linguagem-Python-blue.svg)](https://www.python.org/)
-[![Biblioteca](https://img.shields.io/badge/Biblioteca-SymPy-orange.svg)](https://www.sympy.org/)
-[![Biblioteca](https://img.shields.io/badge/Biblioteca-NumPy-blue.svg)](https://numpy.org/)
 [![Licença](https://img.shields.io/badge/Licença-MIT-green.svg)](./LICENSE)
 ![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow.svg)
 ![PUC Minas](https://img.shields.io/badge/Instituição-PUC%20Minas-blueviolet.svg)
