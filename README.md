@@ -40,10 +40,8 @@ Aqui você encontrará explicações teóricas, exemplos práticos e implementa�
 | Tecnologia | Descrição |
 |------------|-----------|
 | 🐍 **Python** | Linguagem principal para implementação dos conceitos |
-| 📊 **NumPy** | Operações numéricas e manipulação de arrays |
-| 🧮 **SymPy** | Cálculo simbólico (derivadas, integrais, limites) |
-| 📈 **Matplotlib** | Visualização gráfica |
 | 💾 **Git & GitHub** | Versionamento e compartilhamento |
+| 📖 **Cálculo: Volume 1 (9ª edição) — James Stewart** | Livro principal para aplicação de exercícios |
 
 ---
 
